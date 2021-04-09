@@ -1,0 +1,108 @@
+/* print styles go here */ 
+* {
+    overflow: visible!important;
+    overflow-y: visible!important;
+    border:none;
+    float: none;
+    /* display: block; */
+}
+.foto, .section-icon{
+    display: none;
+}
+.main{
+    flex-direction: column ;
+}
+.work-experience, .short-info{
+    padding: 0;
+    width: 100%;
+}
+.interest-wrp{
+    justify-content: flex-start;
+}
+.interest-icon{
+    margin: 10px 20px 0 0;
+}
+.interest-icon:last-child{
+    margin-right: 0;
+}
+.courses-list{
+    font-size: 15px;
+}
+.section-header{
+    font-size: 18px;
+    text-decoration: underline;
+}
+.section-text{
+    font-size: 14px;
+}
+.header{
+    padding: 10px;
+}
+.name{
+    font-size: 18px;
+    margin: 5px;
+}
+.vacansion{
+    font-size: 14px;
+    margin: 5px;
+}
+.contacts{
+    list-style-type: none;
+}
+
+.contacts-item{
+    margin-bottom: 5px;
+}
+.contacts-item:last-child{
+    margin-bottom: 0;
+}
+.contacts-icon{
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    padding-left: 40px;
+}
+
+.contacts-icon:before{
+    position: absolute;
+    top: 2px;
+    left: 0px;
+}
+.map{
+    display: none !important;
+}
+.organizations-list{
+    list-style-type: none;
+}
+.interest-icon{
+    width: 50px;
+    height: 50px;
+    border: 3px solid darkseagreen;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.interest-wrp{
+    margin:20px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.interest{
+    width: 30px;
+}
+.skills-item{
+    display: flex;
+    margin-bottom: 10px;
+}
+.percent-view{
+    margin-right: 5px;
+}
+summary{
+    font-size: 20px;
+}
+@page {
+    size: A4;
+    margin: 15mm 15mm 15mm 15mm;
+  }

@@ -1,0 +1,366 @@
+html, body{
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex-column{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.green{
+    background-color: darkseagreen;
+}
+.header{
+    padding: 60px 75px;
+    box-sizing: border-box;
+    color: #ffffff;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    
+}
+.foto{
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+    background:url('../img/2020-10-10\ 16-25-24.JPG') no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 30px;
+}
+.name{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+.vacansion{
+    font-size: 20px;
+    font-weight: 600;
+}
+.contacts{
+    list-style: none;
+    font-size: 20px;
+    padding: 0;
+    margin-left: 40px;
+}
+.contacts-item{
+    margin-bottom: 5px;
+}
+.contacts-item:last-child{
+    margin-bottom: 0;
+}
+.contacts-icon{
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+}
+.contacts-icon:hover{
+    color:azure
+}
+.contacts-icon:before{
+    position: absolute;
+    top: 2px;
+    left: -25px;
+
+}
+.contacts-item:hover{
+    font-style: italic;
+}
+#address{
+    position: relative;
+}
+.map{
+    width: 424px;
+    height: 437px;
+    position: absolute;
+    z-index: 10;
+    display: none;
+    border: 4px solid darkseagreen;
+    border-radius: 4px;
+}
+#address:hover .map{
+    display: block;
+}
+.main{
+    align-items: flex-start;
+}
+.short-info{
+    width:30%;
+    background-color: #f0f0f0;
+    padding:40px 30px;
+    box-sizing: border-box;
+    border-radius: 0 0 10px 0;
+}
+.work-experience{
+    width: 70%;
+    background-color: #fcfefe;
+    padding:40px 30px;
+    box-sizing: border-box;
+}
+.section-icon{
+    width: 50px;
+    height: 50px;
+    background-color: darkseagreen;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+.section-header{
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+}
+.section-text{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #000000;
+}
+.interest-icon{
+    width: 50px;
+    height: 50px;
+    border: 3px solid darkseagreen;
+    border-radius: 50%;
+}
+.interest-wrp{
+    margin:20px 0;
+}
+.interest{
+    width: 30px
+}
+
+.courses-list{
+    list-style-type: '\270E';
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.courses-item:not(:first-child){
+    color:#afafaf
+}
+.organizations-list{
+    list-style-type: none;
+    border-left: 3px solid darkseagreen;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 25px 20px;
+    position: relative;
+}
+.organizations-list:after{
+    content: '';
+    display: block;
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: darkseagreen;
+    position: absolute;
+    bottom:-3px;
+    left:-7px;
+}
+.organizations-item{
+    position: relative;
+}
+.organizations-item:before{
+    content: '';
+    width:21px;
+    border-bottom: 3px solid darkseagreen;
+    position: absolute;
+    top:50%;
+    left:-21px;
+}
+.organization-name{
+    margin: 10px auto;
+    padding: 10px;
+    position: relative;
+    border: 3px solid darkseagreen;
+    border-radius: 5px;  
+}
+
+.organization-name:before {
+        width: 100%;
+        height: 100%;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: inherit;
+        pointer-events: none;
+        transition: opacity .2s;
+        z-index: -1;
+}
+
+.organization-name summary {
+    padding: 10px;
+    display: block;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+    outline: transparent;
+}
+.organization-name summary:focus {
+    outline: 2px solid darkseagreen;
+}
+.organization-name summary::before,
+.organization-name summary::after {
+  width: 15px;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  content: '';
+  background-color: darkseagreen;
+  text-align: right;
+  transform: translateY(-50%);
+  transition: transform .2s ease-in-out;
+}
+.organization-name summary::after {
+    transform: translateY(-50%) rotate(90deg);
+} 
+.organization-name[open] summary:after  {
+      transform: translateY(-50%) rotate(180deg);
+}
+.university-name{
+    margin: 40px ;
+    list-style: none;
+    padding: 0;
+}
+ .university-name ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   }
+   .university-name .university-name-level {
+     margin-left: 10px;
+   }
+   .university-name li {
+     margin: 0;
+     padding: 0 7px;
+     border-left:3px solid darkseagreen;
+}
+    .university-name .university-name-year{
+       border-left:none;
+   } 
+   .university-name li:before {
+      position:relative;
+      top:-0.3em;
+      height:1em;
+      width:12px;
+      color:white;
+      border-bottom:3px solid darkseagreen;
+      content:"";
+      display:inline-block;
+      left:-7px;
+   }
+   .university-name-year:before {
+      border-left:3px solid darkseagreen;   
+   } 
+
+.skills-wrp{
+    margin-top:20px;
+}
+.percent{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 50%;
+    font-weight: 600;
+}
+.skills-item{
+    align-items: center;
+    margin-top: 10px;
+}
+.percent-view{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color:darkseagreen;
+}
+.skill-name{
+    margin-top: 20px;
+}
+
+.view75{
+    background:conic-gradient(
+    darkseagreen 0% 75%,
+    #fff 75% 0
+    )
+}
+.view50{
+    background:conic-gradient(
+    darkseagreen 0 50%,
+    #fff 50% 0
+    )
+}
+.view30{
+    background:conic-gradient(
+    darkseagreen 0% 30%,
+    #fff 30% 0
+    )
+}
+.view10{
+    background:conic-gradient(
+    darkseagreen 0% 10%,
+    #fff 10% 0
+    )
+}
+@media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .organization-name{
+        border:none;
+    }
+    .organization-name summary::before,
+    .organization-name summary::after{
+    display: none;
+    }
+    .organizations-item:before{
+        top:10%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .main{
+        flex-direction: column;
+    }
+    .work-experience{
+        width: 100%;
+    }
+    .short-info{
+        width: 100%;
+    }
+    .interest-wrp{
+        justify-content: flex-start;
+    }
+    .interest-icon{
+        margin: 10px 20px 0 0;
+    }
+    .interest-icon:last-child{
+        margin-right: 0;
+    }
+    .courses-list{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 600px){
+    .map{
+        display: none !important;
+    }
+}
+@media screen and (max-width: 450px){
+.foto{
+    margin:0 10px;
+}
+
+}
