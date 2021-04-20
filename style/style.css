@@ -197,6 +197,9 @@ html, body{
     border: 3px solid darkseagreen;
     border-radius: 5px;  
 }
+.organization-name summary:hover{
+    color: #888888;
+}
 
 .organization-name:before {
         width: 100%;
